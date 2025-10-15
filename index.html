@@ -1,0 +1,392 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Jim Kujwane Sebopela - Profile</title> 
+<link rel="icon"type="image/png" href="favicon.png">
+<style> 
+/* GLOBAL STYLES */ 
+html { 
+font-size: 100%; 
+scroll-behavior: smooth; 
+} 
+body { 
+font-family: "Segoe UI", sans-serif; 
+margin: 0; 
+background: url("b5.jpeg") no-repeat center center fixed; 
+background-size: cover; 
+color: white; 
+line-height: 1.6; 
+} 
+/* HEADER */ 
+header { 
+display: flex; 
+justify-content: space-between; 
+align-items: center; 
+padding: 0.5rem 2rem; 
+background: black; 
+position: relative; 
+z-index: 2; 
+} 
+.logo { 
+width: 70px; 
+height: 70px; 
+background-color: #00ffcc; 
+color: #121212; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+border-radius: 50%; 
+font-weight: bold; 
+font-size: 14px; 
+order: 2; 
+} 
+.menu-dots { 
+width: 20px; 
+height: 24px; 
+display: flex; 
+flex-direction: column; 
+justify-content: space-between; 
+align-items: center; 
+cursor: pointer; 
+padding: 4px 0; 
+} 
+.menu-dots span { 
+width: 6px; 
+height: 6px; 
+background-color: green; 
+border-radius: 50%; 
+display: block; 
+} 
+/* NAVIGATION */ 
+
+
+    nav { position: fixed; top: 70px; right: -350px; height: 90%; width: 
+      80px; background:black; padding: 4rem 2rem; transition:
+       left 0.3s ease; display: flex; flex-direction:column; gap: 1.5rem; 
+      z-index:1000;}
+nav.open { 
+left: 0; 
+} 
+nav a { 
+color: white; 
+text-decoration: none; 
+font-size: 1.2rem; 
+transition: color 0.3s ease; 
+} 
+nav a:hover { 
+color: #00ffcc; 
+} 
+/* MAIN CONTENT */ 
+.container { 
+max-width: 1000px; 
+margin: 2rem auto; 
+padding: 1.5rem; 
+} 
+section { 
+margin-bottom: 3rem; 
+background: rgba(0, 0, 0, 0.85); 
+padding: 2rem; 
+border-radius: 12px; 
+box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+transition: transform 0.3s ease, opacity 0.3s ease; 
+opacity: 0; 
+transform: translateY(20px); 
+text-align:justify;
+} 
+section.visible { 
+opacity: 1; 
+transform: translateY(0); 
+} 
+h2 { 
+color: #00ff99; 
+margin-bottom: 1rem; 
+text-align: center; 
+} 
+p { 
+font-size: 1rem; 
+text-align:;
+} 
+/* PROFILE IMAGES */ 
+.profile-pic, .profile2-pic { 
+width: 240px; 
+height: 240px; 
+border-radius: 20%; 
+margin: 1rem; 
+object-fit: cover; 
+} 
+.profile-pic { 
+float: left; 
+} 
+.profile2-pic { 
+float: right; 
+} 
+.profile-section::after { 
+content: ""; 
+display: block; 
+clear: both; 
+} 
+
+
+/* FOOTER */ 
+footer { 
+background-color: black; 
+color: white; 
+text-align: center; 
+padding: 20px 0; 
+      margin-top: 40px; 
+      width: 100%; 
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      font-size: 0.9rem; 
+    } 
+ 
+    /* RESPONSIVENESS */ 
+    @media (max-width: 1024px) { 
+      .container { 
+        padding: 2rem; 
+      } 
+ 
+      section { 
+        padding: 1.5rem; 
+      } 
+ 
+      .profile-pic, .profile2-pic { 
+        width: 180px; 
+        height: 180px; 
+      } 
+    } 
+ 
+    @media (max-width: 768px) { 
+      header { 
+        padding: 0.5rem 1rem; 
+      } 
+   @media (max-width: 480px) {nav a{
+    text-align:center;
+    font-size:1rem;
+   }
+   
+     @media (max-width: 480px) {p{
+      font-size:0.8rem;
+      line-height:1.5;
+      margin-bottom:0.8rem;
+      text-align:justify;
+      font-family:'inter' Arial, sans-serif;
+     }}
+     { #projects {
+      font-size:0.8rem;
+      line-height:1.0;
+      margin-bottom:0.8rem;
+      text-align:justify;
+     }}
+      @media (max-width: 480px) {.profile-pic,.profile2-pic{
+        float:;
+        display:block;
+        width:55%;
+        height:auto;
+      }}
+
+   }
+      .logo { 
+        width: 60px; 
+        height: 60px; 
+        font-size: 12px; 
+      } 
+ 
+      nav { 
+        width: 70px; 
+      } 
+ 
+      .profile-pic,  { 
+       float: left; 
+        display: block; 
+        margin: 0 auto 1rem; 
+        width: 70%; 
+        height: 70%; 
+      } 
+ .profile2-pic{
+   float:right; 
+        display: block; 
+        margin: 0 auto 1rem; 
+        width: 70%; 
+        height: 70%; 
+ }
+      .container { 
+        padding: 1rem; 
+      } 
+ 
+      section { 
+        margin-bottom: 2rem; 
+      } 
+    } 
+ 
+    @media (max-width: 480px) { 
+      body { 
+        font-size: 0.95rem; 
+      } 
+ 
+      .logo { 
+        width: 70px; 
+        height: 70px; 
+        font-size: 11px; 
+      } 
+ 
+      .menu-dots span { 
+        width: 5px; 
+        height: 5px; 
+      } 
+ 
+      section { 
+        padding: 0.9rem; 
+      } 
+ 
+      h2 { 
+        font-size: 1.2rem; 
+      } 
+ 
+      .footer-text{ 
+        font-size: 0.8rem; 
+        text-align:center;
+      } 
+    } 
+    .skills-icons { 
+display: flex; 
+flex-wrap: wrap;      /* wrap icons on smaller screens */ 
+gap: 50rem; 
+justify-content: center; /* center on all screens */ 
+margin: 0 auto 1.5rem auto; 
+width:100%;
+text-align:center;
+} 
+.skill-icon { 
+width: 150px;          
+height: 150px; 
+/* default size */ 
+transition: transform 0.2s ease, box-shadow 0.2s ease; 
+cursor: pointer; 
+border-radius: 8px;   /* optional rounded corners */ 
+} 
+/* Hover effect for desktop */ 
+.skill-icon:hover { 
+transform: scale(1.2);            
+/* icon grows slightly */ 
+box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* shadow appears */ 
+} 
+/* Touch effect for mobile */ 
+@media (max-width: 480px) { 
+.skill-icon:active { 
+transform: scale(1.2); 
+box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+} 
+.skill-icon { 
+width: 50px;   /* smaller icons on phones */ 
+height: 50px; 
+} 
+}.skill-icon[title]:hover::after { 
+content: attr(title); 
+position: absolute; 
+background: black; 
+color: white; 
+padding: 2px 6px; 
+border-radius: 4px; 
+top: -30px; 
+font-size: 0.75rem; 
+white-space: nowrap;}
+  </style> 
+</head> 
+ 
+<body> 
+  <header> 
+    <div class="logo">About Jim</div> 
+    <div class="menu-dots" onclick="toggleMenu()"> 
+      <span></span><span></span><span></span> 
+    </div> 
+  </header> 
+
+ <nav id="nav"> 
+  <a href="index.html">About</a> 
+    <a href="Goals&Aspirations.html">Goals</a> 
+    <a href="contact.html">Contact</a> 
+  </nav> 
+ 
+  <main class="container"> 
+    <section id="about"> 
+      <h2>About Me</h2> 
+      <div class="profile-section"> 
+        <img src="profile.jpg" alt="jim kujwane sebopela" class="profile-pic"> 
+        <p>Hi, I`m Jim Kujwane Sebopela, a self-taught web developer with a passion for building innovative digital solutions.
+           I started my journey with HTML, CSS and Javascript crafting visually appeling and user-friendly interfaces. As I grew in my craft,
+           I expanded my skillset to PHP, continually refining my coding skills to deliver dynamic and robust web applications.
+           I`m dedicated to stayig up-to-date with the latest web development trends and best practices, always looking for opportunities to learn and grow</p> 
+        <p>In my free time, I enjoy exploring new technologies and experimenting with different coding techniques to improve my skills,
+           I`m excited to collaborate with others, share my knowledge, 
+          and learn from fellow developers.</p> 
+        <img src="profile22.jpg" alt="jim kujwane sebopela" class="profile2-pic"> 
+        <p>If you`re looking for a dedicated and passionate web developer who can bring your ideas to life,
+           let`s connect! i`m always opento new opportunities and collaborations that can help me grow as a developer and deliver high quality solutions. 
+           whether you`re a startup looking to launch your MVP or an online presence, i`m here to help. 
+           Let`s discuss how we can work together to create a website that not only looks great but also drive results.
+           Feel free to reach out to me directly through my contact page or connect with me on social media to start the conversation. Let`s build something amazing together!</p> 
+      </div> 
+    </section> 
+ 
+    <section id="skills"> 
+      <h2>Skills and Specialities</h2> 
+<div style="text-align:center;"
+      <div class="skills-icons.">
+        <img src="html-icons.png"alt="HTML" class="skill-icon">
+        <img src="css-icons.jpeg"alt="CSS" class="skill-icon">
+        <img src="php-icons.png"alt="PHP" class="skill-icon">
+        <img src="js-icons.png"alt="JavaScript" class="skill-icon"></div>
+
+    <p> 
+As a self-taught web developer, I’ve honed my skills in crafting dynamic and user-friendly 
+web applications. My expertise includes HTML, CSS, PHP, and JavaScript, which allows me 
+to build robust and interactive websites.  
+I am proficient in creating responsive designs that work seamlessly across desktops, 
+tablets, and mobile devices. I focus on writing clean, maintainable code while ensuring 
+optimal performance and accessibility.  
+Additionally, I enjoy exploring new technologies, frameworks, and libraries to 
+continuously improve my development skills. Whether it's front-end interface design, back
+end functionality, or integrating APIs, I am dedicated to delivering high-quality web 
+solutions that meet client requirements and provide engaging user experiences. 
+</p> 
+    </section> 
+
+ <section id="projects"> 
+<h2>Projects & Experiences</h2> 
+<p><ul> 
+<li>Developed responsive and user-friendly web applications and websites.</li> 
+<li>Created dynamic interfaces using HTML, CSS, and JavaScript.</li> 
+<li>Worked on collaborative projects to solve real-world problems.</li> 
+<li>Continuously improving coding skills and exploring modern web technologies.</li> 
+</ul></p>
+</section>
+ 
+  <footer> 
+    <p class="footer-text">&copy; 2025 Jim Kujwane Sebopela. All rights reserved.</p> 
+  </footer> 
+ 
+  <script> 
+    function toggleMenu() { 
+      document.getElementById('nav').classList.toggle('open'); 
+    } 
+ 
+    const sections = document.querySelectorAll("section"); 
+ 
+    function showSections() { 
+      sections.forEach(section => { 
+        const rect = section.getBoundingClientRect(); 
+        if (rect.top < window.innerHeight - 50) { 
+          section.classList.add("visible"); 
+        } 
+      }); 
+    } 
+ 
+    window.addEventListener("scroll", showSections); 
+    window.addEventListener("load", showSections); 
+</script> 
+</body> 
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title> Goals & AspirationS - Jim Sebopela</title> 
+<link rel="icon"type="image/png" href="favicon.png">
+<style> 
+/* GLOBAL STYLES */ 
+html { 
+font-size: 100%; 
+scroll-behavior: smooth; 
+} 
+body { 
+font-family: "Segoe UI", sans-serif; 
+margin: 0; 
+background: url("b5.jpeg") no-repeat center center fixed; 
+background-size: cover; 
+color: white; 
+line-height: 1.6; 
+} 
+/* HEADER */ 
+header { 
+display: flex; 
+justify-content: space-between; 
+align-items: center; 
+padding: 0.5rem 2rem; 
+background: black; 
+position: relative; 
+z-index: 2; 
+} 
+.logo { 
+width: 70px; 
+height: 70px; 
+background-color: #00ffcc; 
+color: #121212; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+border-radius: 50%; 
+font-weight: bold; 
+font-size: 14px; 
+order: 2; 
+} 
+.menu-dots { 
+width: 20px; 
+height: 24px; 
+display: flex; 
+flex-direction: column; 
+justify-content: space-between; 
+align-items: center; 
+cursor: pointer; 
+padding: 4px 0; 
+} 
+.menu-dots span { 
+width: 6px; 
+height: 6px; 
+background-color: green; 
+border-radius: 50%; 
+display: block; 
+} 
+/* NAVIGATION */ 
+
+
+    nav { position: fixed; top: 70px; right: -350px; height: 90%; width: 
+      80px; background:black; padding: 4rem 2rem; transition:
+       left 0.3s ease; display: flex; flex-direction:column; gap: 1.5rem; 
+      z-index:1000;}
+nav.open { 
+left: 0; 
+} 
+nav a { 
+color: white; 
+text-decoration: none; 
+font-size: 1.2rem; 
+transition: color 0.3s ease; 
+} 
+nav a:hover { 
+color: #00ffcc; 
+} 
+/* MAIN CONTENT */ 
+.container { 
+max-width: 1000px; 
+margin: 2rem auto; 
+padding: 1.5rem; 
+} 
+section { 
+margin-bottom: 3rem; 
+background: rgba(0, 0, 0, 0.85); 
+padding: 2rem; 
+border-radius: 12px; 
+box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+transition: transform 0.3s ease, opacity 0.3s ease; 
+opacity: 0; 
+transform: translateY(20px); 
+text-align:justify;
+} 
+section.visible { 
+opacity: 1; 
+transform: translateY(0); 
+} 
+h2 { 
+color: #00ff99; 
+margin-bottom: 1rem; 
+text-align: center; 
+} 
+p { 
+font-size: 1rem; 
+text-align:;
+} 
+/* PROFILE IMAGES */ 
+.profile-pic, .profile2-pic { 
+width: 240px; 
+height: 240px; 
+border-radius: 20%; 
+margin: 1rem; 
+object-fit: cover; 
+} 
+.profile-pic { 
+float: left; 
+} 
+.profile2-pic { 
+float: right; 
+} 
+.profile-section::after { 
+content: ""; 
+display: block; 
+clear: both; 
+} 
+
+
+/* FOOTER */ 
+footer { 
+background-color: black; 
+color: white; 
+text-align: center; 
+padding: 20px 0; 
+      margin-top: 40px; 
+      width: 100%; 
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      font-size: 0.9rem; 
+    } 
+ 
+    /* RESPONSIVENESS */ 
+    @media (max-width: 1024px) { 
+      .container { 
+        padding: 2rem; 
+      } 
+ 
+      section { 
+        padding: 1.5rem; 
+      } 
+ 
+      .profile-pic, .profile2-pic { 
+        width: 180px; 
+        height: 180px; 
+      } 
+    } 
+ 
+    @media (max-width: 768px) { 
+      header { 
+        padding: 0.5rem 1rem; 
+      } 
+   @media (max-width: 480px) {nav a{
+    text-align:center;
+    font-size:1rem;
+   }
+   
+     @media (max-width: 480px) {p{
+      font-size:0.8rem;
+      line-height:1.5;
+      margin-bottom:0.8rem;
+      text-align:justify;
+      font-family:'inter',Arial, sans-serif;
+     }}
+     {ul li{
+      font-size:0.8rem;
+      line-height:1.0;
+      margin-bottom:0.8rem;
+      text-align:justify;
+     }}
+      @media (max-width: 480px) {.profile-pic,.profile2-pic{
+        float:;
+        display:block;
+        width:55%;
+        height:auto;
+      }}
+
+   }
+      .logo { 
+        width: 60px; 
+        height: 60px; 
+        font-size: 12px; 
+      } 
+ 
+      nav { 
+        width: 70px; 
+      } 
+ 
+      .profile-pic,  { 
+       float: left; 
+        display: block; 
+        margin: 0 auto 1rem; 
+        width: 70%; 
+        height: 70%; 
+      } 
+ .profile2-pic{
+   float:right; 
+        display: block; 
+        margin: 0 auto 1rem; 
+        width: 70%; 
+        height: 70%; 
+ }
+      .container { 
+        padding: 1rem; 
+      } 
+ 
+      section { 
+        margin-bottom: 2rem; 
+      } 
+    } 
+ 
+    @media (max-width: 480px) { 
+      body { 
+        font-size: 0.95rem; 
+      } 
+ 
+      .logo { 
+        width: 70px; 
+        height: 70px; 
+        font-size: 11px; 
+      } 
+ 
+      .menu-dots span { 
+        width: 5px; 
+        height: 5px; 
+      } 
+ 
+      section { 
+        padding: 0.9rem; 
+      } 
+ 
+      h2 { 
+        font-size: 1.2rem; 
+      } 
+ 
+      .footer-text{ 
+        font-size: 0.8rem; 
+        text-align:center;
+      } 
+    } 
+.circle-gallery-overlap { 
+Position: relative; 
+Width: 400px; 
+Height: 300px; 
+Margin: 3rem auto; 
+Display: flex; 
+Justify-content: center; 
+Align-items: center; 
+} 
+/* All circles share base style */ 
+.circle { 
+Position: absolute; 
+Width: 140px; 
+Height: 140px; 
+Border-radius: 50%; 
+Object-fit: cover; 
+Border: 4px solid #fff; 
+Box-shadow: 0 5px 15px rgba(0,0,0,0.4); 
+Transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+/* Circle positions (adjust for your layout) */ 
+.circle1 { 
+Top: 30px; 
+Left: 20px; 
+z-index: 1; 
+} 
+.circle2 { 
+Top: 50px; 
+Left: 130px; 
+z-index: 2;
+width:170px; 
+height:170px
+} 
+.circle3 { 
+Top: 40px; 
+Left: 240px; 
+z-index: 1; 
+} 
+.circle4 { 
+Top: 150px; 
+Left: 80px; 
+z-index: 3; 
+} 
+.circle5 { 
+Top: 150px; 
+Left: 190px; 
+z-index: 2; 
+} 
+/* Hover / touch animation */ 
+.circle:hover, 
+.circle:active { 
+Transform: scale(1.08); 
+Box-shadow: 0 10px 20px rgba(0,0,0,0.6); 
+} 
+/* Responsive for phones */ 
+@media (max-width: 480px) { 
+.circle-gallery-overlap { 
+Width: 250px; 
+Height: 220px; 
+} 
+.circle { 
+Width: 90px; 
+Height: 90px; 
+} 
+.circle1 { top: 50px; left: 40px; } 
+.circle2 { top: 90; left: 170px; } 
+.circle3 { top: 30px; left: 150px; } 
+.circle4 { top: 110px; left: 50px; } 
+.circle5 { top: 110px; left: 110px; }}
+  </style> 
+</head> 
+ 
+<body> 
+  <header> 
+    <div class="logo">About Jim</div> 
+    <div class="menu-dots" onclick="toggleMenu()"> 
+      <span></span><span></span><span></span> 
+    </div> 
+    </header> 
+
+ <link rel="icon"type="image/jpeg" href="images/favicon.jpeg">
+  <nav id="nav"> 
+  <a href="index.html">About</a> 
+    <a href="Goals&Aspirations.html">Goals</a> 
+    <a href="contact.html">Contact</a> 
+  </nav> 
+ 
+  <main class="container"> 
+   
+ 
+    <section id=”goals”> 
+<h2>Goals & Aspirations</h2> 
+
+<div class="circle-gallery-overlap"> 
+<img src="a1.jpeg" alt="Gallery 1" class="circle circle1"> 
+<img src="a21.jpeg" alt="Gallery 2" class="circle circle2"> 
+<img src="a3.jpeg" alt="Gallery 3" class="circle circle3 main-circle"> 
+<img src="a4.jpg" alt="Gallery 4" class="circle circle4"> 
+<img src="a5.png" alt="Gallery 5" class="circle circle5"> 
+</div> 
+
+<p> 
+As a passionate web developer, my immediate goal is to continuously strengthen my 
+skills in building responsive, interactive, and user-friendly web applications. I aim to 
+explore modern frameworks, improve coding practices, and deliver solutions that are both 
+visually appealing and technically robust. 
+</p> 
+<p> 
+In the mid-term, I aspire to contribute to innovative projects that address real-world 
+challenges. Collaborating with diverse teams and engaging in projects that require 
+problem-solving, creativity, and strategic thinking is a key focus. I want to leverage my skills 
+to create applications that enhance user experience and provide tangible value to clients 
+and communities. 
+</p> 
+<p> 
+Looking further ahead, my long-term ambition is to grow as a versatile full-stack 
+developer and establish a professional portfolio that demonstrates expertise, reliability, 
+and creativity. I strive to stay ahead of emerging technologies, continuously learn, and 
+participate in projects that challenge me to expand my capabilities while making a 
+meaningful impact in the digital space. 
+</p> 
+</section>
+  <footer> 
+    <p class="footer-text">&copy; 2025 Jim Kujwane Sebopela. All rights reserved.</p> 
+  </footer> 
+ 
+  <script> 
+    function toggleMenu() { 
+      document.getElementById('nav').classList.toggle('open'); 
+    } 
+ 
+    const sections = document.querySelectorAll("section"); 
+ 
+    function showSections() { 
+      sections.forEach(section => { 
+        const rect = section.getBoundingClientRect(); 
+        if (rect.top < window.innerHeight - 50) { 
+          section.classList.add("visible"); 
+        } 
+      }); 
+    } 
+ 
+    window.addEventListener("scroll", showSections); 
+    window.addEventListener("load", showSections); 
+</script> 
+</body> 
+</html>
