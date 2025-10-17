@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jimsebopela.github.io/About-Jim-/sitemap.xml
